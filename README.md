@@ -25,6 +25,30 @@ return {
   },
 }
 ```
+### intelephense (php LSP)
+put the following lines into `~/.config/nvim/lua/plugins/lsp.lua`
+```lua
+return {
+  {
+    "neovim/nvim-lspconfig",
+    ---@class PluginLspOpts
+    opts = {
+      autoformat = false,
+      servers = {
+        intelephense = {
+          settings = {
+            intelephense = {
+              format = {
+                braces = "k&r",
+              },
+            },
+          },
+        },
+      },
+    }
+  }
+}
+```
 ## ...and the Journey begins!
 This repo will be organised using folders, but this might change :)
 
