@@ -43,10 +43,11 @@ return {
               },
             },
           },
+          root_dir = require("lspconfig").util.root_pattern("composer.json", ".git", "*.php"),
         },
       },
-    }
-  }
+    },
+  },
 }
 ```
 ## ...and the Journey begins!
